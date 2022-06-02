@@ -1,0 +1,66 @@
+body {
+  font-family: 'Roboto Flex';  
+  margin: auto;      
+}
+
+h1 {    /*need to figure out why this isnt centering too - probably something to do with the original stylesheet overriding the second one*/
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  display: block;  
+  text-align: center;
+  width: 800px;  
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: black;    
+}
+
+form label {
+  display: inline;
+  margin-left: 10px;
+}
+
+form input {
+  font-family: 'Roboto Flex';  
+  margin-bottom: 10px;  
+  width: 150px;
+  border-radius: 3px;
+  border-width: 1px;
+}
+
+form textarea {  
+  font-family: 'Roboto Flex';  
+  border-radius: 3px;
+}
+
+form select {
+  font-family: 'Roboto Flex';  
+  width: 150px;
+  margin-bottom: 15px;  
+  border-radius: 3px;
+}
+
+form button {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100px;
+  font-family: 'Roboto Flex';  
+  background-color: aliceblue;
+  border-width: 1px;
+  border-radius: 3px;
+}
+
+form button:hover {
+  background-color: rgb(200, 208, 214);
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+#selectLabel {
+  margin-top: 10px;
+}

@@ -1,0 +1,50 @@
+body {
+  font-family: 'Roboto Flex';  
+  margin: auto;      
+}
+
+#mainContainer {
+  text-align: center;
+}
+
+.projects {
+  display: inline-flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  padding: 50px;  
+}
+
+.projectsDiv {
+  background-color: rgb(252, 252, 252);
+  padding: 50px;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;  
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-right: 20px;  
+}
+
+.projectsDiv img {
+  width: 320px;
+  height: 180px;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 1px;
+}
+
+
+.projectsDiv h4 {
+  font-size: 18px;
+}
+
+.projectsDiv a {
+  text-decoration: none;
+  color: black;  
+}
+
+.projectsDiv a:hover { 
+ transition: .3s ease-in-out;
+ font-size: 16px; 
+}

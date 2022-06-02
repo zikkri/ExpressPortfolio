@@ -1,0 +1,68 @@
+body {
+  font-family: 'Roboto Flex';    
+}
+
+#aboutContainer {
+  width: 90%;
+  margin: auto;
+  display: inline-flex;
+}
+
+#textContainer {
+  padding-left: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-right: 15px;
+  width: auto;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#buttonDiv {
+  display: flex;
+  justify-content: center;
+  position: absolute;  
+  bottom: 0%;
+  margin-bottom: 55px;
+}
+
+#buttonDiv button {  
+  font-family: 'Roboto Flex';  
+  font-size: 25px;
+  width: 250px;
+  border-radius: 3px;
+  border-color: inherit;
+  background-color: inherit;
+  border-width: 0px;
+  color: black;  
+  text-decoration: none;
+}
+
+#buttonDiv button a {  
+  text-decoration: none;
+  color:black;
+  transition: .3s ease-in-out;
+}
+
+#buttonDiv button:hover {       
+  font-size: 28px;
+  cursor: pointer;
+}
+
+#imgContainer {
+  display: flex;        
+  justify-content: center;
+  margin: auto;
+  padding-top:50px;  
+  padding-bottom: auto;
+}
+
+#imgContainer img {
+  width: 600px;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

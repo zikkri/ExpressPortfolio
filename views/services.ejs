@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/servicestyle.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">  
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+  <title>services</title>
+</head>
+<body>
+  <%- include ('partials/header')%>    
+  <div id="mainContainer">
+    <h1>services that I offer</h1> 
+  </div>     
+  <div id="servicesContainer">  
+    <div id="web" class="services">
+      <h2>web design</h2>
+      <p>I have created a variety of different websites, incorporating html, css, and javascript.
+        I can create you a functional website within a resonable timeframe depending on the needs and features you would like implemented.
+      </p>
+    </div>
+    <div id="programming" class="services">
+      <h2>programming</h2>
+      <p>I am experienced with c#, java, javascript, and also know a bit of python. I can help you with any programming needs that you require, given it is within my skillset. feel free to contact me with your idea for an app or program.
+      </p>
+    </div>
+    <div id="database" class="services">
+      <h2>database</h2>
+      <p>I have experience working with oracle databases and am very confident in my abilities with sql. I can help you out with any database needs you have, from creating a database to operating, maintaining & navigating within a database.
+      </p>
+    </div>
+  </div>
+  <%- include ('partials/footer')%>
+  <script src="/javascripts/services.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/contactstyle.css">
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <title>contact</title>
+</head>
+<body class="homeBody">
+  <%- include ('partials/header')%>  
+  <div id="mainContainer">
+    <h1>please fill out the following form in order to inquire about my services</h1> 
+  </div>       
+  <form action="" id="form">
+    <h2>contact form</h2>    
+    <label for="name">name</label>
+    <input type="text" placeholder="john smith" id="name" required>    
+    <label for="email">email</label>
+    <input type="email" placeholder="johnsmith@gmail.com" id="email" required>
+    <label for="phone number">phone number</label>
+    <input type="tel" placeholder="1234567890" maxlength="10" id="number" required><br>
+    <label for="inquiry" id="selectLabel">area of inquiry</label><br>
+    <select id="inquirySelection">
+      <option disabled selected value="none">please select one</option>
+      <option value="web">web design</option>
+      <option value="programming">programming needs</option>
+      <option value="database">database work</option>
+      <option value="other">other</option>
+    </select><br>
+    <label for="notes">additional notes</label><br>
+    <textarea id="additional" cols="100" rows="10"></textarea><br>
+    <button type="submit" onclick="validation()" href="../homepage/index.html">submit</button> 
+  </form>
+  <script src="/javascripts/contact.js"></script>
+  <%- include ('partials/footer')%>
+</body>
+</html>
+
+
+
+
+

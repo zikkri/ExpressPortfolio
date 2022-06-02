@@ -1,0 +1,148 @@
+/*styling for homepage + header and footer*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,700;8..144,800&display=swap');
+
+body {
+  font-family: 'Roboto Flex';  
+  display: flex;
+  min-width: 300px;  
+  flex-wrap: wrap;
+  margin: auto;  
+}
+
+header {
+  display: inline-flex;
+  width: 100%;  
+}
+
+nav {
+   background: rgb(15,15,15);
+   background: linear-gradient(260deg, rgba(15,15,15,1) 0%, rgb(48, 47, 47) 92%);   
+   width: 100%;   
+   height: auto;
+   justify-content: space-around;      
+   text-align: center;
+}
+
+ul {
+  display: inline-flex;  
+  text-decoration:  none; 
+  list-style-type: none;  
+}
+
+li {
+  padding: 80px;
+  padding-bottom: 0;
+  padding-top: 50px;
+  font-size: 25px;
+  margin: auto;  
+}
+
+li a {
+  text-decoration: none;
+  color:white;
+  transition: .3s ease-in-out;
+}
+
+li a:hover {
+  cursor: pointer;
+  color: white;
+  font-size: 28px;  
+}
+
+footer {
+   background: rgb(15,15,15);
+   background: linear-gradient(260deg, rgba(15,15,15,1) 0%, rgb(48, 47, 47) 92%);   
+   color: white;
+   width: 100%;   
+   min-width: 300px;
+   height: auto;
+   text-align: center;      
+   bottom: 0;   
+   margin-top: 25px;
+}
+
+footer h4 {
+  font-weight: 400;
+}
+
+#headerImg {
+  width: 250px;      
+}
+
+#mainContainer {
+  width: 90%;
+  min-width: 300;  
+  flex-wrap: wrap;
+  margin: auto;
+  padding: auto;
+  position: relative;  
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+#imgContainer {
+  display: flex;        
+  justify-content: center;
+  margin: auto;
+  padding-top:50px;  
+  padding-bottom: auto;
+}
+
+#imgContainer h2 {
+  text-align: center;
+  font-weight: 800;
+}
+
+#imgContainer h1 {
+  text-align: center;
+  font-weight: 800;
+}
+
+#imgContainer img {
+  width: 600px;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#quote {
+  padding-left: 25px;
+  margin-left: 55px;
+  padding-right: 15px;
+  width: auto;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#buttonDiv {
+  display: flex;
+  justify-content: center;
+  position: absolute;  
+  bottom: 0%;
+}
+
+#buttonDiv button {  
+  font-family: 'Roboto Flex';  
+  font-size: 25px;
+  width: 250px;
+  border-radius: 3px;
+  border-color: inherit;
+  background-color: inherit;
+  border-width: 0px;
+  color: black;  
+}
+
+#buttonDiv button a {  
+  text-decoration: none;
+  color:black;
+  transition: .3s ease-in-out;
+}
+
+#buttonDiv button:hover {       
+  font-size: 28px;
+  cursor: pointer;
+}

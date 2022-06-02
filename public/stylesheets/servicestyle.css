@@ -1,0 +1,71 @@
+body {
+  font-family: 'Roboto Flex';   
+  display: flex; 
+}
+
+.services {
+  flex:1;
+}
+
+body h1 {   
+  text-align: center;  
+}
+
+#servicesContainer {
+  width: 90%;
+  height: 300px;
+  margin: auto;  
+  text-align: center;
+  display: flex;  
+  align-items: center;
+  justify-content: center;  
+}
+
+#web {
+  margin: auto;
+  width: 30%;  
+  border-style: solid;
+}
+
+#web h2:hover {
+  cursor: pointer;
+}
+
+#web p {
+  padding: 20px;
+  display: none;
+}
+
+#programming {
+  margin: 20px;
+  width: 30%;  
+  border-style: solid;
+}
+
+#programming h2:hover {
+  cursor: pointer;
+}
+
+#programming p {
+  padding: 20px;
+  display: none;
+}
+
+#database {
+  margin: auto;
+  width: 30%;
+  border-style: solid;
+}
+
+#database h2 {
+  cursor: pointer;
+}
+
+#database p {
+  padding: 20px;
+  display: none;
+}
+
+footer {
+  position: absolute;
+}
