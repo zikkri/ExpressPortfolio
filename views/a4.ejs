@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>membership form</title>
+    <link rel="stylesheet" href="/stylesheets/a4.css">  
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body>    
+    <div id="form-container">        
+        <form id="form">
+            <div id="header">
+                <h1>Membership<br>Form</h1>             
+            </div>            
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" required><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" required><br>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" required><br>
+            <label for="City">City: </label><br>
+            <input type="text" id="city" required><br>
+            <label for="postal">Postal Code:</label><br>
+            <input type="text" id="postal" required><br>
+            <label for="province">Province:</label><br>
+            <input type="text" id="province" required><br>
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" min="0" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" required><br>
+            <label for="confirm">Confirm Password:</label><br>
+            <input type="password" id="confirm" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" required><br><br>
+            <button type="button" id="register">Register Now</button>
+            <button type="reset">Clear form</button>                 
+            <br>
+            <h5>&copy;&nbsp;&nbsp;Copyright - Zack Bowker - COMP125-011 - Winter 2022</h5>
+        </form>
+        <div id="greyscreen">
+            <div id="hidden">
+                <button type="submit" onclick="hideDiv()">&#10006</button>
+                <h3>Thanks for registering with our website, your
+                    customer record was created successfully.</h3>                        
+            </div>
+        </div>
+    </div>
+    <script src="/javascripts/a4.js"></script>
+</body>
+</html>

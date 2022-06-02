@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>basal metabolic rate calculator</title>
+  <link rel="stylesheet" href="/stylesheets/a1.css">  
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body id="wrapper">     
+  <div class="topinfo">
+    <h2>Basal Metabolic Calculator</h2>
+    <p>The Harris–Benedict equation is a method used to estimate an individual's basal metabolic rate (BMR). The original Harris–Benedict equations were published in 1918 and 1919, and this calculator uses the same iteration of the equation. The result displayed is your current BMR as well as the approximate number of calories needed to maintain your current body weight.</p>
+  </div>
+  <form>   
+    <br>  
+    <div class="radioBtns">      
+      <label>
+        <input type="radio" id="radioImperial" name="type" checked onclick="hideDiv(0)">Imperial
+      </label>  
+      <label>
+        <input type="radio" id="radioImperial" name="type" onclick="hideDiv(1)">Metric
+      </label>
+    </div> 
+    <div id="Imperial">
+      <h4>Select Gender</h4>    
+      <select id="genderI" name="genderI">       
+        <option selected disabled>Choose Gender</option>     
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+      </select>
+      <h4>Age</h4>
+      <input type="number" id="ageI" name="ageI" value="" min="0">
+      <h4>Height</h4>
+      <label>Feet</label><br> 
+      <input type="number" id="feetI" name="feetI" value="" min="0"><br><br>
+      <label>Inches</label><br>
+      <input type="number" id="inchesI" name="inchesI" value="" min="0">  
+      <h4>Weight in lbs</h4>
+      <input type="number" id="lbI" name="lbI" value="" min="0"><br>
+      <h4>Activity Level</h4>
+      <select class="activitylevel" name="activityI" id="activityI">
+        <option selected disabled>Select your activity level</option>
+        <option value="0">Sedentary</option>
+        <option value="1">Lightly active</option>
+        <option value="2">Moderately active</option>
+        <option value="3">Very active</option>
+        <option value="4">Extra active</option>
+      </select><br>
+      <button type=button id="calculateI" class="button" value="Calculate BMR" onclick="calculateBMRImperial()">Calculate</button>
+      <button type=reset class="button" onclick="closeMessage()">Reset</button><br>
+    </div>     
+    <div id="Metric">
+      <h4>Select Gender</h4>    
+      <select id="genderM" name="genderM">       
+        <option selected disabled>Choose Gender</option>     
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+      </select>
+      <h4>Age</h4>
+      <input type="number" id="ageM" name="ageM" value="" min="0">
+      <h4>Height in CM</h4>            
+      <input type="number" id="centimetersM" name="centimetersM" value="" min="0">  
+      <h4>Weight in kgs</h4>
+      <input type="number" id="kgM" name="kgM" value="" min="0"><br>
+      <h4>Activity Level</h4>
+      <select class="activitylevel" name="activityM" id="activityM">
+        <option selected disabled>Select your activity level</option>
+        <option value="0">Sedentary</option>
+        <option value="1">Lightly active</option>
+        <option value="2">Moderately active</option>
+        <option value="3">Very active</option>
+        <option value="4">Extra active</option>
+      </select><br>
+      <button type=button id="calculateM" class="button" value="Calculate BMR" onclick="calculateMetricBMR()">Calculate</button>
+      <button type=reset class="button" onclick="closeMessage()">Reset</button><br>
+    </div>
+  </form><br><br>
+  <div id="finalresult wrapper" class="finalresult">
+      <h4><u>BMR</u></h4>     
+      <h2 id="result"></h2>    
+      <h4><u>Daily caloric intake</u></h4>           
+      <h2 id="calories"></h2>   
+  </div>    
+  <script src="/javascripts/a1.js"></script>
+</body>
+</html>

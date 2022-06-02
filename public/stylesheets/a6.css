@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap');
+
+body {
+  display: flex;  
+  font-family: 'Comfortaa';
+  color: white;
+  background-image: url(/images/background1.jpg);
+  background-repeat: none;
+  background-size: cover;
+}
+
+
+#wrapper {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#elseDiv {
+  display: block;
+  text-align: center;
+}
+
+#elseDiv h1 {
+  font-size: 64px;
+  text-align: center;
+  text-shadow: 2px 1px black;
+}
+
+#elseDiv button {
+  font-family: "Comfortaa";
+  border-radius: 4px;
+  color: white;
+  background-color: rgb(130, 179, 248);
+  padding: 5px;
+  margin-left: 10px;
+  width: 100px;
+  margin-top: 20px;
+}
+
+#elseDiv button:hover {
+  background-color: rgb(78, 149, 248);
+  cursor: pointer;
+}
+
+#elseDiv h4 {
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 1px 1px black;
+}
+
+#imgDiv {
+  display: block;  
+}
+
+#imgDiv img {
+  width: 640px;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 10px 0 20px 5px rgb(231, 141, 253), -10px 0 20px 5px rgb(143, 199, 255), 0 0 45px 5px black;
+  border-width: 1px;
+  border-color: rgb(83, 83, 83);
+  border-style: solid;    
+  position: relative;
+}
+
+#white {
+  width: 640px;
+  height: 600px;
+  background-color: white;
+  opacity: 90%;
+  position: absolute;
+  border-radius: 5px;
+}

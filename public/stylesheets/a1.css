@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Poppins:wght@100;200;500&display=swap');
+
+body {
+  font-family: Montserrat;
+  display: block;  
+  flex: auto;  
+  background-color: rgb(240, 240, 249);
+  overflow: scroll;
+}
+
+h2 {
+  text-align: center;  
+  position:relative;
+}
+
+p {
+  text-align: center;
+  position: relative;  
+  width: 817px;  
+  padding-left: 8px;
+}
+
+form {
+  width: 40%;          
+  border-style: solid;  
+  display: inline-block;  
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  left:285px;
+  background-color: #fad0c4;
+  background-image: linear-gradient(315deg, #fdfdfd 1%, #ffc3ff 100%);  
+  background-size: 100%;
+}
+
+select {
+  margin-left: 15px;  
+  margin-top: 0px;
+  position: relative;
+  right: 8px;
+  font-family: Montserrat;
+  border-radius: 5px;
+  width: 135px;  
+}
+
+input {
+  font-family: Montserrat;
+  border-radius: 5px;
+}
+
+.activitylevel {  
+  width: 185px;
+}
+
+.button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;  
+  font-family: Montserrat;
+  background-color: rgb(238, 237, 237);
+}
+
+.button:hover {
+  background-color: rgb(190, 189, 189); 
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.topinfo {
+  border-style: solid;
+  border-radius:10px;
+  margin: 10px;  
+  background-color: white;
+  width: 87%;
+  align-items: center;
+  position: relative;
+  left: 55px;
+}
+
+.finalresult {
+  position: fixed;
+  top: 77%;
+  left: 85%;
+  transform:translate(-50%, -50%);  
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;  
+  background-color: white;
+  width: 350px;
+  text-align: center;
+}
+
+.finalresult h2 {
+  font-size: 3em;
+  font-weight: bold;
+  margin:0;  
+  padding-bottom: 10px;
+}
+
+#wrapper {
+  margin-left:auto;
+  margin-right:auto;
+  width:960px;
+}

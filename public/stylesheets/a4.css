@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;500;600;900&display=swap');
+
+body {
+    font-family: 'Prompt';       
+    margin: auto;    
+    display: flex;
+    text-align: center;  
+    justify-content: center;
+    background-image: url(/images/IMG_1000.png);
+}
+
+label {
+    font-weight: 300;
+}
+
+input {
+    font-family: 'Prompt';      
+    border-radius: 5px;
+    border-width: 2px;
+    font-weight: 400;    
+    background-color: rgb(224, 229, 250);;
+}
+
+input:invalid {
+    background-color: rgb(204, 212, 248);
+}
+
+button {
+    font-family: 'Prompt';
+    font-weight: 300;      
+    border-radius: 5px;
+    border-width: 2px;    
+    background-color: rgb(97, 113, 255);
+    color: white;
+    text-shadow:  0 5px 10px black;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(76, 94, 253);
+}
+
+form {
+    border-style: solid;
+    padding: 15px;
+    margin-top: 75px;    
+    margin-bottom: 25px;        
+    border-radius: 10px;
+    border-width: 2px;
+    box-shadow: 0 0 20px 3px black;
+    background-color: rgb(233, 233, 233);
+}
+
+form img {
+    max-width: 500px;
+    min-width: 300px;
+    max-height: 280px;   
+    border-radius: 5px;
+}
+
+h5 {
+    font-weight: 500;
+}
+
+#form-container {
+    display: flex;        
+    min-width: 300px;
+    max-width: 600px;
+    max-height: auto;
+    min-height: auto;
+}
+
+#form-container h1 {
+    background-image: url(/images/cool-background.png);
+    background-repeat: none;
+    background-size: 100%;
+    font-size: 3em;
+    color: white;    
+    text-shadow:  0 5px 10px black;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#greyscreen {
+    display: none;
+    background-color: rgb(0, 0, 0);
+    opacity: 60%;
+    position: absolute; 
+    right:0px; 
+    width: 100%;    
+    height: 100%;
+    margin-left: 0;
+}
+
+#hidden {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+}
+
+#hidden button {
+    background-color: inherit;
+    border: none;    
+}
