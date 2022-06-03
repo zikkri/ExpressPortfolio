@@ -58,6 +58,7 @@ footer {
    height: auto;
    text-align: center;      
    bottom: 0;   
+   position: relative;
    margin-top: 25px;
 }
 
