@@ -1,3 +1,5 @@
+//a5.js | zack bowker | 301199878 | june 3
+
 //global variables
 var catsCaughtZack = 0;
 var speedZack = 5000;

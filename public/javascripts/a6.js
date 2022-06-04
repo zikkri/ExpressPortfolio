@@ -1,3 +1,5 @@
+//a6.js | zack bowker | 301199878 | june 3
+
 var photoOrder = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
 var autoAdvanceZack = setInterval(nextPic, 6000);
 var position = 1;

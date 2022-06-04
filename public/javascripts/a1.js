@@ -1,3 +1,5 @@
+//a1.js | zack bowker | 301199878 | june 3
+
 //flex variables
 var result = 0;
 var calories = 0;

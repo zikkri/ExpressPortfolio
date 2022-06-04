@@ -1,3 +1,5 @@
+//contact.js | zack bowker | 301199878 | june 3
+
 function validation(){
   var name = document.getElementById('name');
   var email = document.getElementById('email');
