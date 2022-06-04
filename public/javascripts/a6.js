@@ -21,10 +21,10 @@ function nextPic(){
 function prevPic(){
   $("#imgDiv").fadeOut(0, 'linear').hide();
   position--;
-  img.src = "/images/IMG_0" + position + ".jpg";  
+  img.src = "images/IMG_0" + position + ".jpg";  
   if(position == 0){
     position = 9;
-    img.src = "/images/IMG_0" + position + ".jpg";
+    img.src = "images/IMG_0" + position + ".jpg";
   }
   $("#imgDiv").fadeIn(600, 'linear');  
   clearInterval(autoAdvanceZack);
