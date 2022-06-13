@@ -1,5 +1,7 @@
 //contact.js | zack bowker | 301199878 | june 3
 
+const res = require("express/lib/response");
+
 function validation(){
   var name = document.getElementById('name');
   var email = document.getElementById('email');
@@ -31,5 +33,5 @@ function validation(){
     return false;
   }   
   //console.log(name.value + ' ' +  email.value + ' ' +   number.value + ' ' +   inquiry.value + ' ' +  notes.value);
-  alert('Thank you, ' + (name.value) + ' for contacting. I will get back to you as soon as possible!');       
+  alert('Thank you, ' + (name.value) + ' for contacting. I will get back to you as soon as possible!');        
 }
