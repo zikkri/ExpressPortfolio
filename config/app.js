@@ -3,13 +3,20 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-//const favicon = require('express-favicon');
+var session = require('express-session');
+var flash = require('connect-flash');
+var passport = require('passport');
 
 var indexRouter = require('../routes/index');
 var usersRouter = require('../routes/users');
-var userRouter = require('../routes/userDB');
 
 var app = express();
+
+app.use(session({
+  saveUninitialized: true,
+  resave: true,
+  secret: 'sessionSecret'
+}));
 
 // view engine setup
 app.set('views', path.join(__dirname, '../views'));
@@ -22,9 +29,13 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.static(path.join(__dirname, '../node_modules')));
 
+//setup passport
+app.use(flash());
+app.use(passport.initialize());
+app.use(passport.session());
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/userDB', userRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
