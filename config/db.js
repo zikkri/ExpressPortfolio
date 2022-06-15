@@ -3,7 +3,7 @@
 //dont expose credentials in the code ever - this is just for learning purposes
 //after .net you can put specific table in to connect to 
 
-let atlasDB = "mongodb+srv://appuser:VW6QPHvffJsg9Yy2@cluster004.xdjel.mongodb.net/?retryWrites=true&w=majority"
+let atlasDB = "mongodb+srv://appuser:VW6QPHvffJsg9Yy2@cluster004.xdjel.mongodb.net/usersDatabase?retryWrites=true&w=majority"
 
 //databse setup
 let mongoose = require('mongoose');
