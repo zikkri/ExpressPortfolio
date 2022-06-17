@@ -1,9 +1,12 @@
 let express = require('express');
 let router = express.Router();
-let contactsController = require('../controller/businesscontacts');
+let businessContactsController = require('../controller/businesscontacts');
 
-//router.get('/')
+router.get('/' , function(req, res, next){
+  console.log("success");
+});
 
+router.get('/businesscontacts', businessContactsController.businessContactsList);
 
 //to make sure no one can delete or update things on the business contacts list 
 function requireAuth(req, res, next){
@@ -15,12 +18,4 @@ function requireAuth(req, res, next){
   next(); 
 }
 
-
-
-
-
-
-
-
-
-
+module.exports = router;

@@ -150,3 +150,14 @@ footer h4 {
   font-size: 28px;
   cursor: pointer;
 }
+
+#clickToSignUp a {
+  text-decoration: none;
+  color:black;
+}
+
+#clickToSignUp:hover {
+  cursor: pointer;
+  font-size: 17px;
+  transition: .3s ease-in-out;
+}

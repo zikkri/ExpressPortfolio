@@ -99,7 +99,7 @@ module.exports.renderSignin = function(req, res, next){
 };
 
 
-module.exports.signIn = function(req, res, next){
+module.exports.signin = function(req, res, next){
   passport.authenticate('local', {
     successRedirect: req.session.url || '/',
     failureRedirect: '/users/signin',
@@ -112,25 +112,6 @@ module.exports.signOut = function(req, res, next){
   req.logOut();
   req.redirect('/');
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*let user = require('../models/user');
 

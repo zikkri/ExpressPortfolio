@@ -14,7 +14,7 @@ router.post('/signup', userController.signup);
 
 //sign in users
 router.get('/signin', userController.renderSignin);
-router.post('/signin', userController.signIn); 
+router.post('/signin', userController.signin); 
 
 //sign out users
 router.get('/', userController.signOut); //once added a signout page change the path

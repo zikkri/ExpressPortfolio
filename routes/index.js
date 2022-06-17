@@ -54,9 +54,4 @@ router.get('/login', function(req, res, next) {
   res.render('login', { title: 'login' });
 });
 
-/* GET login page. */
-router.get('/businesscontacts', function(req, res, next) {
-  res.render('businesscontacts', { title: 'business contacts' });
-});
-
 module.exports = router;
