@@ -9,6 +9,7 @@ body {
   min-width: 300px;    
   flex-wrap: wrap;
   margin: auto;    
+  overflow-x: hidden;
 }
 
 header {
@@ -32,7 +33,7 @@ ul {
 }
 
 li {
-  padding: 80px;
+  padding: 60px;
   padding-bottom: 0;
   padding-top: 50px;
   font-size: 25px;

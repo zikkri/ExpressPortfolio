@@ -1,0 +1,12 @@
+#bcontainer {
+  display: flex;
+  text-align: center;
+}
+
+.contactsTable {
+  
+}
+
+.contactsTable button {
+  width: 1000px;
+}
