@@ -9,7 +9,7 @@ module.exports.businessContactsList = function(req, res, next) {
       }
       else
       {
-          res.render('/businesscontacts/businesscontacts', { ////something in here need to fix
+          res.render('business/businesscontacts', { 
           title: 'business contacts', 
           businessContactsList: businessContactsList,
           userName: req.user ? req.user.username : ''
@@ -31,7 +31,7 @@ module.exports.displayEditPage = (req, res, next) => {
         else
         {
             //show the edit view
-            res.render('businesscontacts/update', {
+            res.render('business/update', {
                 title: 'update', 
                 contact: updateContact,
                 userName: req.user ? req.user.username : ''
@@ -61,7 +61,7 @@ module.exports.processEdit = (req, res, next) => {
       }
       else
       {                    
-          res.redirect('/businesscontacts/businesscontacts');
+          res.redirect('/business/businesscontacts');
           return res.status(200).json(
               { 
                   success: true, 
@@ -87,7 +87,7 @@ module.exports.performDelete = (req, res, next) => {
       else
       {
           // refresh the book list
-          res.redirect('/businesscontacts/businesscontacts');
+          res.redirect('/business/businesscontacts');
       }
   });
 }
@@ -97,7 +97,7 @@ module.exports.displayAddPage = (req, res, next) => {
 
     let newItem = businessContactsModel();
 
-    res.render('businesscontacts/update', { /////not sure about this
+    res.render('business/update', { /////not sure about this
         title: 'Add a new Item',
         item: newItem,
         userName: req.user ? req.user.username : ''

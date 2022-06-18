@@ -37,7 +37,7 @@ app.use(passport.session());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/businesscontacts', businessContactsRouter);
+app.use('/business', businessContactsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
