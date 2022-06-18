@@ -4,11 +4,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">  
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/updatestyle.css">  
   <title>update</title>
 </head>
 <body>
-  <%- include ('./partials/header') %>
-
-  <%- include ('./partials/footer') %>
+  <%- include ('../partials/header') %>
+  <!--FIRST NAME | LAST NAME | PHONE NUMBER| EMAIL ADDRESS | need to come back to the action
+  think its supposed to be a function path but need to check the example first-->  
+  <form action="" id="updateForm">
+    <h1>update business contacts</h1>
+    <label for="">first name</label><br>
+    <input type="text"><br>
+    <label for="">last name</label><br>
+    <input type="text"><br>
+    <label for="">phone number</label><br>
+    <input type="text"><br>
+    <label for="">email</label><br>
+    <input type="text"><br>
+    <button>update</button>
+  </form>
+  <%- include ('../partials/footer') %>
 </body>
 </html>

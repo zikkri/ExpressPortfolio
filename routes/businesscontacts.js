@@ -8,6 +8,10 @@ router.get('/' , function(req, res, next){
 
 router.get('/businesscontacts', businessContactsController.businessContactsList);
 
+router.get('/update', function(req, res, next){
+  res.render('business/update', {title: 'update'})
+});
+
 
 //to make sure no one can delete or update things on the business contacts list 
 function requireAuth(req, res, next){
