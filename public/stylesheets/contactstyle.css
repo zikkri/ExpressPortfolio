@@ -18,6 +18,7 @@ form {
   margin-top: 25px;
   margin-bottom: 25px;
   border-style: solid;
+  border-width: 1px;
   border-radius: 10px;
   border-color: black;    
 }
@@ -52,13 +53,13 @@ form button {
   margin-top: 10px;
   width: 100px;
   font-family: 'Roboto Flex';  
-  background-color: aliceblue;
+  background-color: rgb(250, 250, 252);
   border-width: 1px;
   border-radius: 3px;
 }
 
 form button:hover {
-  background-color: rgb(200, 208, 214);
+  background-color: rgb(230, 230, 230);
   cursor: pointer;
   transition: .3s ease-in-out;
 }

@@ -82,7 +82,7 @@ module.exports.performDelete = (req, res, next) => {
       if(err)
       {
           console.log(err);
-          res.end(err);
+          res.end(err);          
       }
       else
       {
@@ -93,7 +93,7 @@ module.exports.performDelete = (req, res, next) => {
 }
 
 
-module.exports.displayAddPage = (req, res, next) => {
+/*module.exports.displayAddPage = (req, res, next) => {  ///dont need add functionality
 
     let newItem = businessContactsModel();
 
@@ -103,9 +103,9 @@ module.exports.displayAddPage = (req, res, next) => {
         userName: req.user ? req.user.username : ''
     })          
 
-}
+}*/
 
-module.exports.processAdd = (req, res, next) => {
+/*module.exports.processAdd = (req, res, next) => {
 
   let newItem = businessContactsModel({
     _id: req.body.id,     
@@ -127,4 +127,4 @@ module.exports.processAdd = (req, res, next) => {
           res.status(200).json(item);     
       }
   });  
-}
+}*/
