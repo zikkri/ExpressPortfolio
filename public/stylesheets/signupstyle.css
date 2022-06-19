@@ -1,0 +1,35 @@
+body {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.signupForm {
+  margin-top: 50px;  
+}
+
+.signupForm input {
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: 'Roboto Flex';  
+  width: 300px;
+}
+
+.signupForm label {
+  padding-bottom: 10px;
+  font-size: 22px;
+}
+
+.signupForm button {
+  width: 150px;
+  height: 25px;
+  background-color: rgb(245, 245, 245);
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+.signupForm button:hover {
+  cursor: pointer;
+  background-color:rgb(226, 225, 225);
+  transition: .3s ease-in-out;
+}

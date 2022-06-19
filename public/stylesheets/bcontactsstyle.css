@@ -1,12 +1,49 @@
 #bcontainer {
-  display: flex;
+  display:block;
+  margin: auto;    
+}
+
+h1{
   text-align: center;
 }
 
 .contactsTable {
-  
+  text-align: center;
+  padding: 20px;
+  margin-top: 25px;
+  border: 1px black solid;
 }
 
 .contactsTable button {
   width: 1000px;
+}
+
+.contactsTable th {
+  font-size: 30px;
+  padding: 30px;
+}
+
+.contactsTable tr {
+  border: 1px black solid;
+}
+
+.contactsTable td {
+  padding: 15px;  
+}
+
+.contactsTable button {
+  width:60px;
+  background-color: rgb(245, 245, 245);
+  border: 1px solid black;  
+}
+
+.contactsTable button:hover {
+  cursor: pointer;
+  background-color:rgb(226, 225, 225);
+  transition: .3s ease-in-out;
+}
+
+.contactsTable a {
+  text-decoration: none;
+  color: black;  
 }

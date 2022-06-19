@@ -5,9 +5,8 @@
 
 let atlasDB = "mongodb+srv://appuser:VW6QPHvffJsg9Yy2@cluster004.xdjel.mongodb.net/usersDatabase?retryWrites=true&w=majority"
 
-//databse setup
+//database setup
 let mongoose = require('mongoose');
-
 module.exports = function(){
   mongoose.connect(atlasDB);  
   let mongoDb = mongoose.connection;

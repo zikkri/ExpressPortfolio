@@ -47,10 +47,10 @@ module.exports.processEdit = (req, res, next) => {
 
   let updatedContact = businessContactsModel({
       _id: req.body.id,       
-      firstName: req.body.firstName,
-      lastName: req.body.lastName,
+      firstName: req.body.firstname,
+      lastName: req.body.lastname,
       phoneNumber: req.body.phoneNumber,
-      emailAddress: req.body.emailAddress
+      emailAddress: req.body.email
   });
 
   businessContactsModel.updateOne({_id: id}, updatedContact, (err) => {
@@ -109,10 +109,10 @@ module.exports.processAdd = (req, res, next) => {
 
   let newItem = businessContactsModel({
     _id: req.body.id,     
-    firstName: req.body.firstName,
-    lastName: req.body.lastName,
+    firstName: req.body.firstname,
+    lastName: req.body.lastname,
     phoneNumber: req.body.phoneNumber,
-    emailAddress: req.body.emailAddress
+    emailAddress: req.body.email
   });
 
   businessContactsModel.create(newItem, (err, item) =>{

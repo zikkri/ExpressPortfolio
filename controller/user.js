@@ -1,15 +1,17 @@
 let user = require('../models/user')
 let passport = require('passport');
+let mongoose = require('mongoose');
+const userSchema = mongoose.Schema;
 
 exports.user = function(req, res, next){
-  res.render('user', {
+  res.render('users', {
     title: 'Users',
     name: 'Student'
   });
 }
 
 exports.zack = function(req, res, next){
-  res.render('user', {
+  res.render('users', {
     title: 'Users',
     name: 'Zack'
   });
@@ -46,7 +48,7 @@ module.exports.renderSignup = function(req, res, next){
     let newUser = user();
 
     res.render('auth/signup', {
-      title: 'sign-up form',
+      title: 'sign up form',
       messages: req.flash('error'),
       user: newUser
     });
@@ -60,7 +62,7 @@ module.exports.signup = function(req, res, next){
   if(!req.user){
     console.log(req.body);
 
-    let user = new User(req.body);
+    let newUser = new user(req.body);
     console.log(user);
 
     user.save((err) => {
@@ -69,8 +71,8 @@ module.exports.signup = function(req, res, next){
 
         req.flash('error', message);
 
-        return res.render('auth/singnup', {
-          title: 'sign-up',
+        return res.render('auth/signup', {
+          title: 'sign up',
           messages: req.flash('error'),
           user: user
         });

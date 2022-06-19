@@ -12,25 +12,30 @@
 <body>
   <%- include ('../partials/header')%>  
   <div id="bcontainer">
+    <h1>business contacts list</h1>
     <table class="contactsTable">
       <!--LOOK AT PROFESSOR EXAMPLE ON HOW TO LOOP THESE-->
       <tr>
-        <td>
-
-        </td>
-        <td>
-          
-        </td>
-        <td>
-          
-        </td>
-        <td>
-          <button>remove</button>
-          <button>edit</button>
-        </td>
+        <th>first name</th>
+        <th>last name</th>
+        <th>phone#</th>
+        <th>email</th>
       </tr>
+      <% for(let i = 0; i < businessContactsList.length; i++) { %>
+        <tr>
+            <td class="text-center"><%= businessContactsList[i].firstname %></td>
+            <td class="text-center"><%= businessContactsList[i].lastname %></td>
+            <td class="text-center"><%= businessContactsList[i].phoneNumber %></td>
+            <td><%= businessContactsList[i].email %></td>                        
+            <td>
+              <button><a href="/business/update/<%= businessContactsList[i]._id%>">update</button></a>
+              <button><a href="/business/delete/<%= businessContactsList[i]._id%>">remove</button></a>
+            </td>
+        </tr>
+    <% } %>
     </table>
   </div>
+  <!--NEED TO ADD BUTTON TO ADD CONTACT-->  
   <%- include ('../partials/footer')%>  
 </body>
 </html>

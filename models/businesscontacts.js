@@ -2,10 +2,10 @@ let mongoose = require('mongoose');
 
 let businessContactsModel = mongoose.Schema(
   {
-    firstName: String,
-    lastName: String,
+    firstname: String,
+    lastname: String,
     phoneNumber: String,
-    emailAddress: {
+    email: {
       type: String, 
       match: [/.+\@.+\..+/, "Please fill a valid email address."]
     }
