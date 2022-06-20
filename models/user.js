@@ -58,7 +58,7 @@ userModel.pre('save', function(next){
 
 //set up middlware post
 userModel.post('save', function(next){
-  console.log("The user " + this.userName + " detials have been saved.");
+  console.log("The user " + this.userName + " details have been saved.");
 });
 
 //add methods for schema

@@ -1,7 +1,5 @@
 let user = require('../models/user')
 let passport = require('passport');
-let mongoose = require('mongoose');
-const userSchema = mongoose.Schema;
 
 exports.user = function(req, res, next){
   res.render('users', {
@@ -63,9 +61,10 @@ module.exports.signup = function(req, res, next){
     console.log(req.body);
 
     let newUser = new user(req.body);
+    newUser.provider = 'local';
     console.log(user);
 
-    user.save((err) => {
+    newUser.save((err) => {
       if(err){
         let message = getErrorMessage(err);
 
@@ -74,7 +73,7 @@ module.exports.signup = function(req, res, next){
         return res.render('auth/signup', {
           title: 'sign up',
           messages: req.flash('error'),
-          user: user
+          user: newUser
         });
       }
       req.login(user, (err) => {
