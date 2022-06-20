@@ -76,7 +76,7 @@ module.exports.signup = function(req, res, next){
           user: newUser
         });
       }
-      req.login(user, (err) => {
+      req.login(newUser, (err) => {
         if(err) return next(err);
         return res.redirect('/');
       });

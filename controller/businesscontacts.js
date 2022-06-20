@@ -22,7 +22,7 @@ module.exports.displayEditPage = (req, res, next) => {
   
     let id = req.params.id;
 
-    businessContactsModel.findById(id, (err, itemToEdit) => {
+    businessContactsModel.findById(id, (err, updateContact) => {
         if(err)
         {
             console.log(err);

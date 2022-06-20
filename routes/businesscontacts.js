@@ -20,7 +20,6 @@ router.get('/update', function(req, res, next){
   res.render('business/update', {title: 'update'})
 });
 
-
 //to make sure no one can delete or update things on the business contacts list 
 function requireAuth(req, res, next){
   //check if user is logged in
