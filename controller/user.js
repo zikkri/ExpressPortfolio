@@ -101,12 +101,12 @@ module.exports.renderSignin = function(req, res, next){
 
 
 module.exports.signin = function(req, res, next){
-  passport.authenticate('local', {
+  passport.authenticate('local', {   
     successRedirect: req.session.url || '/',
     failureRedirect: '/users/signin',
     failureFlash: true
   })(req, res, next);
-    delete req.session.url;  
+  delete req.session.url;
 }
 
 module.exports.signOut = function(req, res, next){

@@ -47,10 +47,10 @@ module.exports.processEdit = (req, res, next) => {
 
   let updatedContact = businessContactsModel({
       _id: req.body.id,       
-      firstName: req.body.firstname,
-      lastName: req.body.lastname,
+      firstname: req.body.firstname,
+      lastname: req.body.lastname,
       phoneNumber: req.body.phoneNumber,
-      emailAddress: req.body.email
+      email: req.body.email
   });
 
   businessContactsModel.updateOne({_id: id}, updatedContact, (err) => {
@@ -70,7 +70,6 @@ module.exports.processEdit = (req, res, next) => {
           );
       }
   });
-
 }
 
 module.exports.performDelete = (req, res, next) => {

@@ -16,6 +16,7 @@ router.put('/update/:id', businessContactsController.processEdit);
 //remove element from table
 router.delete('/delete/:id', businessContactsController.performDelete);
 
+
 router.get('/update', function(req, res, next){
   res.render('business/update', {title: 'update'})
 });
