@@ -22,8 +22,8 @@
           <a href="/business/businesscontacts">business contacts</a>
         </li>
         <li>
-          <% if (userName) { %>
-            <a href="/users/signOut" onclick="return confirm('Are you sure?')">logout (<%= userName %>)</a>
+          <% if (typeof username == 'String' && username) { %>
+            <a href="/users/signOut" onclick="return confirm('are you sure?')">logout</a>
           <% } else { %>
             <a href="/users/signin">login</a>
           <% } %>                            

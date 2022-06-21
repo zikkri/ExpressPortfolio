@@ -4,7 +4,8 @@ let passport = require('passport');
 exports.user = function(req, res, next){
   res.render('users', {
     title: 'Users',
-    name: 'Student'
+    name: 'Student',
+    userName: req.user ? req.user.userName : ''     
   });
 }
 
@@ -105,7 +106,7 @@ module.exports.signin = function(req, res, next){
     successRedirect: req.session.url || '/',
     failureRedirect: '/users/signin',
     failureFlash: true
-  })(req, res, next);
+  })(req, res, next);  
   delete req.session.url;
 }
 
@@ -113,22 +114,3 @@ module.exports.signOut = function(req, res, next){
   req.logOut();
   req.redirect('/');
 }
-
-/*let user = require('../models/user');
-
-module.exports.userList = function(res, req, next){
-  user.find((err, userList) => {
-    if(err)
-    {
-      return console.log(err);
-    }
-    else
-    {
-      console.log(userList);
-      res.render('user/list', {
-          title: "User List",
-          UserList: userlist        
-      });
-    }
-  });
-}*/

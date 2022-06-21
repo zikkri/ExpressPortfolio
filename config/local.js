@@ -26,3 +26,27 @@ function authLocal(username, password, done){
     return done(null, user);
   });
 }
+
+module.exports = function() {
+  passport.use(new LocalStrategy((username, password, done)=>{
+      user.findOne({userName: username}, (err, user)=>{
+          if (err) {
+              return done(err);
+          }
+          
+          if (!user) {
+              return done(null, false, {
+                  message: 'Unknown user'
+              });
+          }
+  
+          if (!user.authenticate(password)) {
+              return done(null, false, {
+                  message: 'Invalid password'
+              });
+          }
+          
+          return done(null, user);
+      });
+  }));
+};
