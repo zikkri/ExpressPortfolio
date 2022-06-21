@@ -10,7 +10,7 @@ router.get('/' , function(req, res, next){
 router.get('/businesscontacts', businessContactsController.businessContactsList);
 
 //update page
-router.get('/update/:id', businessContactsController.displayEditPage);
+router.get('/update/:id', requireAuth,  businessContactsController.displayEditPage);
 router.post('/update/:id', businessContactsController.processEdit);
 
 //remove element from table

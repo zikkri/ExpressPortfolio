@@ -25,11 +25,12 @@ input {
   text-align: center;
 }
 
-button {
+.button {
   margin-top: 50px;
   padding: 10px;
   font-size: 22px;
   width: 500px;
+  height: 50px;
   border-radius: 5px;
   font-family: 'Roboto Flex';  
   background-color: rgb(250, 250, 252);
@@ -37,7 +38,7 @@ button {
   border-width: 1px;
 }
 
-button:hover {
+.button:hover {
   cursor: pointer;  
   transition: .3s ease-in-out;
   background-color: rgb(230, 230, 230);

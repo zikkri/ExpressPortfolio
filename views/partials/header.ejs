@@ -22,7 +22,11 @@
           <a href="/business/businesscontacts">business contacts</a>
         </li>
         <li>
-          <a href="/users/signin">login</a>  
+          <% if (userName) { %>
+            <a href="/users/signOut" onclick="return confirm('Are you sure?')">logout (<%= userName %>)</a>
+          <% } else { %>
+            <a href="/users/signin">login</a>
+          <% } %>                            
         </li>
       </ul>
     </nav>
