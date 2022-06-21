@@ -10,7 +10,7 @@ module.exports = function(){
 function authLocal(username, password, done){
   console.log("===========> authLocal function");
   
-  user.findOne({username: username}, (err, user) =>{
+  user.findOne({userName: username}, (err, user) =>{
     if(err){
       return done(err);
     }

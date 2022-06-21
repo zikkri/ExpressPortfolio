@@ -10,11 +10,11 @@ router.get('/' , function(req, res, next){
 router.get('/businesscontacts', businessContactsController.businessContactsList);
 
 //update page
-router.get('/update/:id', requireAuth, businessContactsController.displayEditPage);
-router.put('/update/:id', businessContactsController.processEdit);
+router.get('/update/:id', businessContactsController.displayEditPage);
+router.post('/update/:id', businessContactsController.processEdit);
 
 //remove element from table
-router.delete('/delete/:id', businessContactsController.performDelete);
+router.get('/delete/:id', businessContactsController.performDelete);
 
 
 router.get('/update', function(req, res, next){

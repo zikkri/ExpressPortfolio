@@ -46,7 +46,7 @@ module.exports.processEdit = (req, res, next) => {
   let id = req.params.id
 
   let updatedContact = businessContactsModel({
-      _id: req.body.id,       
+      _id: id,       
       firstname: req.body.firstname,
       lastname: req.body.lastname,
       phoneNumber: req.body.phoneNumber,
@@ -62,12 +62,12 @@ module.exports.processEdit = (req, res, next) => {
       else
       {                    
           res.redirect('/business/businesscontacts');
-          return res.status(200).json(
-              { 
-                  success: true, 
-                  message: 'contact updated successfully.'
-              }
-          );
+        //   return res.status(200).json(
+        //       { 
+        //           success: true, 
+        //           message: 'contact updated successfully.'
+        //       }
+        //   );
       }
   });
 }
