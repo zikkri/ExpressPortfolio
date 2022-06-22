@@ -76,7 +76,6 @@ module.exports.performDelete = (req, res, next) => {
 
   let id = req.params.id;
 
-
   businessContactsModel.remove({_id: id}, (err) => {
       if(err)
       {

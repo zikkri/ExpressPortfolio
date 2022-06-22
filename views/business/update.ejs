@@ -11,8 +11,7 @@
 </head>
 <body>
   <%- include ('../partials/header') %>
-  <!--FIRST NAME | LAST NAME | PHONE NUMBER| EMAIL ADDRESS | need to come back to the action
-  think its supposed to be a function path but need to check the example first-->  
+  <!--FIRST NAME | LAST NAME | PHONE NUMBER| EMAIL ADDRESS-->  
   <form method="post" id="updateForm">
     <h1>update business contacts</h1>
     <label for="">first name</label><br>
@@ -23,7 +22,11 @@
     <input type="text" name="phoneNumber" value="<%=contact.phoneNumber%>"><br>    
     <label for="">email</label><br>
     <input type="text" name="email" value="<%=contact.email%>"><br>    
-    <button>update</button>
+    <div class="buttons">
+      <button>update</button>
+      <button><a href="/business/delete/<%=contact.id%>">delete</a></button>
+      <button><a href="/business/businesscontacts">cancel</a></button>
+    </div>    
   </form>
   <%- include ('../partials/footer') %>
 </body>

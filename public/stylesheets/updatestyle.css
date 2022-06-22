@@ -26,9 +26,11 @@ label {
 
 button {
   margin-top: 50px;
+  margin-right: 25px;
+  margin-left: 25px;
   padding: 10px;
   font-size: 22px;
-  width: 500px;
+  width: 200px;
   border-radius: 5px;
   font-family: 'Roboto Flex';  
   background-color: rgb(250, 250, 252);
@@ -40,4 +42,13 @@ button:hover {
   cursor: pointer;  
   transition: .3s ease-in-out;
   background-color: rgb(230, 230, 230);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.buttons {
+  display: inline-flex;
 }
