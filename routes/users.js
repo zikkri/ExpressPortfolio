@@ -20,6 +20,6 @@ router.get('/signin', userController.renderSignin);
 router.post('/signin', userController.signin); 
 
 //sign out users
-router.get('/', userController.signOut); //once added a signout page change the path
+router.get('/signout', userController.signout); //once added a signout page change the path
 
 module.exports = router;

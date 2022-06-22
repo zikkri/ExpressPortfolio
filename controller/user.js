@@ -102,15 +102,18 @@ module.exports.renderSignin = function(req, res, next){
 
 
 module.exports.signin = function(req, res, next){
+  console.log('===============>authlocal function');
   passport.authenticate('local', {   
     successRedirect: req.session.url || '/',
     failureRedirect: '/users/signin',
     failureFlash: true
   })(req, res, next);  
+
+  console.log(req.body.username);
   delete req.session.url;
 }
 
-module.exports.signOut = function(req, res, next){
+module.exports.signout = function(req, res, next){
   req.logOut();
   req.redirect('/');
 }
